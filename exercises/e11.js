@@ -5,7 +5,13 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function lowMoonsPlanets(data) {
-  // Your code goes here...
+  // return data.planets.filter(planet => planet.moons && planet.moons.length < 10).map(planet => planet.name)
+  return data.planets.reduce((acc, planet) => {
+    if (planet.moons && planet.moons.length < 10) {
+      return [...acc, planet.name];
+    }
+    return acc;
+  }, [])
 }
 
 
