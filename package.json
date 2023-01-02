@@ -2,6 +2,7 @@
   "name": "applicative-practice",
   "version": "1.0.0",
   "description": "this is a great way to practice array applicatives in js",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test-all": "vitest --run",
