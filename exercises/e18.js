@@ -12,6 +12,7 @@ export function getGreatestDiscoveryYear(data) {
     counts[asteroid.discoveryYear]++;
     return counts;
   }, {});
+  console.log('years', discoveryYearCounts);
   const sortedYears = Object.entries(discoveryYearCounts).sort((a, b) => b[1] - a[1])
   return +sortedYears[0][0]
 }

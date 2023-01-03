@@ -6,11 +6,11 @@ import { data } from "../data/data";
 
 export function getPlanetsWithLowGravity(data) {
   return data.planets.reduce((acc, planet) => {
-    if (planet.gravity < 10) {
-      return [...acc, planet.name];
-    }
-    return acc;
-  }, [])
+      if (planet.gravity < 10) {
+        return [...acc ,planet.name];
+      }
+      return acc;
+    }, [])
 }
 
 
